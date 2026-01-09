@@ -160,27 +160,27 @@ namespace Lab.GUI
             this.grpThongTin.TabIndex = 0;
             this.grpThongTin.Text = " Thông tin lớp ";
 
-            int lblX = 20, ctrlX = 130, startY = 35, step = 50;
+            // int lblX = 20, ctrlX = 130, startY = 35, step = 50; // REMOVED
 
             // MaLop
-            this.lblMaLop.Location = new System.Drawing.Point(lblX, startY); this.lblMaLop.Text = "Mã Lớp:"; this.lblMaLop.AutoSize = true; this.lblMaLop.ForeColor = System.Drawing.Color.Black; this.lblMaLop.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaLop.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtMaLop.Size = new System.Drawing.Size(220, 25); this.txtMaLop.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaLop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMaLop.Location = new System.Drawing.Point(20, 35); this.lblMaLop.Text = "Mã Lớp:"; this.lblMaLop.AutoSize = true; this.lblMaLop.ForeColor = System.Drawing.Color.Black; this.lblMaLop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMaLop.Location = new System.Drawing.Point(130, 32); this.txtMaLop.Size = new System.Drawing.Size(220, 25); this.txtMaLop.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaLop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // KhoaHoc
-            this.lblKhoaHoc.Location = new System.Drawing.Point(lblX, startY); this.lblKhoaHoc.Text = "Khóa Học:"; this.lblKhoaHoc.AutoSize = true; this.lblKhoaHoc.ForeColor = System.Drawing.Color.Black; this.lblKhoaHoc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtKhoaHoc.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtKhoaHoc.Size = new System.Drawing.Size(220, 25); this.txtKhoaHoc.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtKhoaHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // KhoaHoc
+            this.lblKhoaHoc.Location = new System.Drawing.Point(20, 85); this.lblKhoaHoc.Text = "Khóa Học:"; this.lblKhoaHoc.AutoSize = true; this.lblKhoaHoc.ForeColor = System.Drawing.Color.Black; this.lblKhoaHoc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtKhoaHoc.Location = new System.Drawing.Point(130, 82); this.txtKhoaHoc.Size = new System.Drawing.Size(220, 25); this.txtKhoaHoc.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtKhoaHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // KhoaQL
-            this.lblKhoaQL.Location = new System.Drawing.Point(lblX, startY); this.lblKhoaQL.Text = "Khoa QL:"; this.lblKhoaQL.AutoSize = true; this.lblKhoaQL.ForeColor = System.Drawing.Color.Black; this.lblKhoaQL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtKhoaQL.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtKhoaQL.Size = new System.Drawing.Size(220, 25); this.txtKhoaQL.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtKhoaQL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // KhoaQL
+            this.lblKhoaQL.Location = new System.Drawing.Point(20, 135); this.lblKhoaQL.Text = "Khoa QL:"; this.lblKhoaQL.AutoSize = true; this.lblKhoaQL.ForeColor = System.Drawing.Color.Black; this.lblKhoaQL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtKhoaQL.Location = new System.Drawing.Point(130, 132); this.txtKhoaQL.Size = new System.Drawing.Size(220, 25); this.txtKhoaQL.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtKhoaQL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // Nganh
-            this.lblNganh.Location = new System.Drawing.Point(lblX, startY); this.lblNganh.Text = "Ngành:"; this.lblNganh.AutoSize = true; this.lblNganh.ForeColor = System.Drawing.Color.Black; this.lblNganh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNganh.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtNganh.Size = new System.Drawing.Size(220, 25); this.txtNganh.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtNganh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // Nganh
+            this.lblNganh.Location = new System.Drawing.Point(20, 185); this.lblNganh.Text = "Ngành:"; this.lblNganh.AutoSize = true; this.lblNganh.ForeColor = System.Drawing.Color.Black; this.lblNganh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNganh.Location = new System.Drawing.Point(130, 182); this.txtNganh.Size = new System.Drawing.Size(220, 25); this.txtNganh.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtNganh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // SiSo
-            this.lblSiSo.Location = new System.Drawing.Point(lblX, startY); this.lblSiSo.Text = "Sĩ Số:"; this.lblSiSo.AutoSize = true; this.lblSiSo.ForeColor = System.Drawing.Color.Black; this.lblSiSo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numSiSo.Location = new System.Drawing.Point(ctrlX, startY - 3); this.numSiSo.Size = new System.Drawing.Size(100, 25); this.numSiSo.Font = new System.Drawing.Font("Segoe UI", 10F); this.numSiSo.Maximum = 1000;
+            // SiSo
+            this.lblSiSo.Location = new System.Drawing.Point(20, 235); this.lblSiSo.Text = "Sĩ Số:"; this.lblSiSo.AutoSize = true; this.lblSiSo.ForeColor = System.Drawing.Color.Black; this.lblSiSo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numSiSo.Location = new System.Drawing.Point(130, 232); this.numSiSo.Size = new System.Drawing.Size(100, 25); this.numSiSo.Font = new System.Drawing.Font("Segoe UI", 10F); this.numSiSo.Maximum = 1000;
 
             // 
             // grpDanhSach

@@ -224,93 +224,76 @@ namespace Lab.GUI
             this.grpThongTin.Text = "Thông tin cá nhân";
             
             // Helper for Textbox Styles
-            int labelX = 15;
-            int inputX = 100;
-            int startY = 30;
-            int stepY = 40;
-            int width = 220;
-
             // MSSV
-            this.label1.AutoSize = true; this.label1.Location = new System.Drawing.Point(labelX, startY); this.label1.Text = "MSSV:";
+            this.label1.AutoSize = true; this.label1.Location = new System.Drawing.Point(15, 30); this.label1.Text = "MSSV:";
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F); this.label1.ForeColor = System.Drawing.Color.Black;
-            this.txtMSSV.Location = new System.Drawing.Point(inputX, startY-3); this.txtMSSV.Size = new System.Drawing.Size(width, 25);
+            this.txtMSSV.Location = new System.Drawing.Point(100, 27); this.txtMSSV.Size = new System.Drawing.Size(220, 25);
             this.txtMSSV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMSSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             
-            startY += stepY;
             // Hoten
-            this.label2.AutoSize = true; this.label2.Location = new System.Drawing.Point(labelX, startY); this.label2.Text = "Họ tên:";
+            this.label2.AutoSize = true; this.label2.Location = new System.Drawing.Point(15, 70); this.label2.Text = "Họ tên:";
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F); this.label2.ForeColor = System.Drawing.Color.Black;
-            this.txtHoTen.Location = new System.Drawing.Point(inputX, startY-3); this.txtHoTen.Size = new System.Drawing.Size(width, 25);
+            this.txtHoTen.Location = new System.Drawing.Point(100, 67); this.txtHoTen.Size = new System.Drawing.Size(220, 25);
             this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
-            startY += stepY;
+            
             // Lop
-            this.label3.AutoSize = true; this.label3.Location = new System.Drawing.Point(labelX, startY); this.label3.Text = "Lớp:";
+            this.label3.AutoSize = true; this.label3.Location = new System.Drawing.Point(15, 110); this.label3.Text = "Lớp:";
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F); this.label3.ForeColor = System.Drawing.Color.Black;
-            this.cmbLop.Location = new System.Drawing.Point(inputX, startY-3); this.cmbLop.Size = new System.Drawing.Size(width, 25);
+            this.cmbLop.Location = new System.Drawing.Point(100, 107); this.cmbLop.Size = new System.Drawing.Size(220, 25);
             this.cmbLop.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.cmbLop.BackColor = System.Drawing.Color.WhiteSmoke;
-
-            startY += stepY;
+            
             // Phai
-            this.label4.AutoSize = true; this.label4.Location = new System.Drawing.Point(labelX, startY); this.label4.Text = "Phái:";
+            this.label4.AutoSize = true; this.label4.Location = new System.Drawing.Point(15, 150); this.label4.Text = "Phái:";
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F); this.label4.ForeColor = System.Drawing.Color.Black;
-            this.cmbPhai.Location = new System.Drawing.Point(inputX, startY-3); this.cmbPhai.Size = new System.Drawing.Size(width, 25);
+            this.cmbPhai.Location = new System.Drawing.Point(100, 147); this.cmbPhai.Size = new System.Drawing.Size(220, 25);
             this.cmbPhai.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbPhai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbPhai.Items.AddRange(new object[] { "Nam", "Nữ" }); this.cmbPhai.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.cmbPhai.BackColor = System.Drawing.Color.WhiteSmoke;
-
-            startY += stepY;
+            
             // NgSinh
-            this.label5.AutoSize = true; this.label5.Location = new System.Drawing.Point(labelX, startY); this.label5.Text = "Ngày sinh:";
+            this.label5.AutoSize = true; this.label5.Location = new System.Drawing.Point(15, 190); this.label5.Text = "Ngày sinh:";
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F); this.label5.ForeColor = System.Drawing.Color.Black;
-            this.dtpNgSinh.Location = new System.Drawing.Point(inputX, startY-3); this.dtpNgSinh.Size = new System.Drawing.Size(width, 25);
+            this.dtpNgSinh.Location = new System.Drawing.Point(100, 187); this.dtpNgSinh.Size = new System.Drawing.Size(220, 25);
             this.dtpNgSinh.Font = new System.Drawing.Font("Segoe UI", 10F); this.dtpNgSinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 
-            startY += stepY;
             // CMND
-            this.label6.AutoSize = true; this.label6.Location = new System.Drawing.Point(labelX, startY); this.label6.Text = "CMND:";
+            this.label6.AutoSize = true; this.label6.Location = new System.Drawing.Point(15, 230); this.label6.Text = "CMND:";
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F); this.label6.ForeColor = System.Drawing.Color.Black;
-            this.txtCMND.Location = new System.Drawing.Point(inputX, startY-3); this.txtCMND.Size = new System.Drawing.Size(width, 25);
+            this.txtCMND.Location = new System.Drawing.Point(100, 227); this.txtCMND.Size = new System.Drawing.Size(220, 25);
             this.txtCMND.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtCMND.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += stepY;
             // SDT
-            this.label7.AutoSize = true; this.label7.Location = new System.Drawing.Point(labelX, startY); this.label7.Text = "SĐT:";
+            this.label7.AutoSize = true; this.label7.Location = new System.Drawing.Point(15, 270); this.label7.Text = "SĐT:";
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F); this.label7.ForeColor = System.Drawing.Color.Black;
-            this.txtSDT.Location = new System.Drawing.Point(inputX, startY-3); this.txtSDT.Size = new System.Drawing.Size(width, 25);
+            this.txtSDT.Location = new System.Drawing.Point(100, 267); this.txtSDT.Size = new System.Drawing.Size(220, 25);
             this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += stepY;
             // Email
-            this.label8.AutoSize = true; this.label8.Location = new System.Drawing.Point(labelX, startY); this.label8.Text = "Email:";
+            this.label8.AutoSize = true; this.label8.Location = new System.Drawing.Point(15, 310); this.label8.Text = "Email:";
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F); this.label8.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(inputX, startY-3); this.txtEmail.Size = new System.Drawing.Size(width, 25);
+            this.txtEmail.Location = new System.Drawing.Point(100, 307); this.txtEmail.Size = new System.Drawing.Size(220, 25);
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += stepY;
             // QueQuan
-            this.label9.AutoSize = true; this.label9.Location = new System.Drawing.Point(labelX, startY); this.label9.Text = "Quê quán:";
+            this.label9.AutoSize = true; this.label9.Location = new System.Drawing.Point(15, 350); this.label9.Text = "Quê quán:";
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F); this.label9.ForeColor = System.Drawing.Color.Black;
-            this.txtQueQuan.Location = new System.Drawing.Point(inputX, startY-3); this.txtQueQuan.Size = new System.Drawing.Size(width, 25);
+            this.txtQueQuan.Location = new System.Drawing.Point(100, 347); this.txtQueQuan.Size = new System.Drawing.Size(220, 25);
             this.txtQueQuan.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtQueQuan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += stepY;
             // DienSV
-            this.label10.AutoSize = true; this.label10.Location = new System.Drawing.Point(labelX, startY); this.label10.Text = "Diện SV:";
+            this.label10.AutoSize = true; this.label10.Location = new System.Drawing.Point(15, 390); this.label10.Text = "Diện SV:";
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F); this.label10.ForeColor = System.Drawing.Color.Black;
-            this.txtDienSV.Location = new System.Drawing.Point(inputX, startY-3); this.txtDienSV.Size = new System.Drawing.Size(width, 25);
+            this.txtDienSV.Location = new System.Drawing.Point(100, 387); this.txtDienSV.Size = new System.Drawing.Size(220, 25);
             this.txtDienSV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDienSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += stepY;
             // BHYT
-            this.label11.AutoSize = true; this.label11.Location = new System.Drawing.Point(labelX, startY); this.label11.Text = "BHYT:";
+            this.label11.AutoSize = true; this.label11.Location = new System.Drawing.Point(15, 430); this.label11.Text = "BHYT:";
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F); this.label11.ForeColor = System.Drawing.Color.Black;
-            this.txtBHYT.Location = new System.Drawing.Point(inputX, startY-3); this.txtBHYT.Size = new System.Drawing.Size(width, 25);
+            this.txtBHYT.Location = new System.Drawing.Point(100, 427); this.txtBHYT.Size = new System.Drawing.Size(220, 25);
             this.txtBHYT.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtBHYT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += stepY;
             // AnhChanDung (Text path)
-            this.label12.AutoSize = true; this.label12.Location = new System.Drawing.Point(labelX, startY); this.label12.Text = "Ảnh:";
+            this.label12.AutoSize = true; this.label12.Location = new System.Drawing.Point(15, 470); this.label12.Text = "Ảnh:";
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F); this.label12.ForeColor = System.Drawing.Color.Black;
-            this.txtAnhChanDung.Location = new System.Drawing.Point(inputX, startY-3); this.txtAnhChanDung.Size = new System.Drawing.Size(width, 25);
+            this.txtAnhChanDung.Location = new System.Drawing.Point(100, 467); this.txtAnhChanDung.Size = new System.Drawing.Size(220, 25);
             this.txtAnhChanDung.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtAnhChanDung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
             // 

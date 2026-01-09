@@ -159,27 +159,25 @@ namespace Lab.GUI
             this.grpThongTin.TabIndex = 0;
             this.grpThongTin.Text = " Thông tin người thân ";
 
-            int lblX = 20, ctrlX = 130, startY = 35, step = 50;
-
             // SV
-            this.lblSinhVien.Location = new System.Drawing.Point(lblX, startY); this.lblSinhVien.Text = "Sinh Viên:"; this.lblSinhVien.AutoSize = true; this.lblSinhVien.ForeColor = System.Drawing.Color.Black; this.lblSinhVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbSinhVien.Location = new System.Drawing.Point(ctrlX, startY - 3); this.cmbSinhVien.Size = new System.Drawing.Size(220, 25); this.cmbSinhVien.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbSinhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lblSinhVien.Location = new System.Drawing.Point(20, 35); this.lblSinhVien.Text = "Sinh Viên:"; this.lblSinhVien.AutoSize = true; this.lblSinhVien.ForeColor = System.Drawing.Color.Black; this.lblSinhVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbSinhVien.Location = new System.Drawing.Point(130, 32); this.cmbSinhVien.Size = new System.Drawing.Size(220, 25); this.cmbSinhVien.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbSinhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
-            startY += step; // SDT
-            this.lblSDT.Location = new System.Drawing.Point(lblX, startY); this.lblSDT.Text = "SĐT:"; this.lblSDT.AutoSize = true; this.lblSDT.ForeColor = System.Drawing.Color.Black; this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSDT.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtSDT.Size = new System.Drawing.Size(220, 25); this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // SDT
+            this.lblSDT.Location = new System.Drawing.Point(20, 85); this.lblSDT.Text = "SĐT:"; this.lblSDT.AutoSize = true; this.lblSDT.ForeColor = System.Drawing.Color.Black; this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSDT.Location = new System.Drawing.Point(130, 82); this.txtSDT.Size = new System.Drawing.Size(220, 25); this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // HoTen
-            this.lblHoTen.Location = new System.Drawing.Point(lblX, startY); this.lblHoTen.Text = "Họ Tên:"; this.lblHoTen.AutoSize = true; this.lblHoTen.ForeColor = System.Drawing.Color.Black; this.lblHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtHoTen.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtHoTen.Size = new System.Drawing.Size(220, 25); this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // HoTen
+            this.lblHoTen.Location = new System.Drawing.Point(20, 135); this.lblHoTen.Text = "Họ Tên:"; this.lblHoTen.AutoSize = true; this.lblHoTen.ForeColor = System.Drawing.Color.Black; this.lblHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHoTen.Location = new System.Drawing.Point(130, 132); this.txtHoTen.Size = new System.Drawing.Size(220, 25); this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // Email
-            this.lblEmail.Location = new System.Drawing.Point(lblX, startY); this.lblEmail.Text = "Email:"; this.lblEmail.AutoSize = true; this.lblEmail.ForeColor = System.Drawing.Color.Black; this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmail.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtEmail.Size = new System.Drawing.Size(220, 25); this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // Email
+            this.lblEmail.Location = new System.Drawing.Point(20, 185); this.lblEmail.Text = "Email:"; this.lblEmail.AutoSize = true; this.lblEmail.ForeColor = System.Drawing.Color.Black; this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.Location = new System.Drawing.Point(130, 182); this.txtEmail.Size = new System.Drawing.Size(220, 25); this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             
-            startY += step; // DiaChi
-            this.lblDiaChi.Location = new System.Drawing.Point(lblX, startY); this.lblDiaChi.Text = "Địa Chỉ:"; this.lblDiaChi.AutoSize = true; this.lblDiaChi.ForeColor = System.Drawing.Color.Black; this.lblDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDiaChi.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtDiaChi.Size = new System.Drawing.Size(220, 25); this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; this.txtDiaChi.Multiline = true; this.txtDiaChi.Height = 60;
+            // DiaChi
+            this.lblDiaChi.Location = new System.Drawing.Point(20, 235); this.lblDiaChi.Text = "Địa Chỉ:"; this.lblDiaChi.AutoSize = true; this.lblDiaChi.ForeColor = System.Drawing.Color.Black; this.lblDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDiaChi.Location = new System.Drawing.Point(130, 232); this.txtDiaChi.Size = new System.Drawing.Size(220, 25); this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; this.txtDiaChi.Multiline = true; this.txtDiaChi.Height = 60;
 
             // 
             // grpDanhSach

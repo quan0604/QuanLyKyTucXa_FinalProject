@@ -149,23 +149,23 @@ namespace Lab.GUI
             this.grpThongTin.TabIndex = 0;
             this.grpThongTin.Text = " Thông tin dịch vụ ";
 
-            int lblX = 20, ctrlX = 130, startY = 40, step = 50;
+            // int lblX = 20, ctrlX = 130, startY = 40, step = 50; // REMOVED
 
             // MaDV
-            this.lblMaDV.Location = new System.Drawing.Point(lblX, startY); this.lblMaDV.Text = "Mã DV:"; this.lblMaDV.AutoSize = true; this.lblMaDV.ForeColor = System.Drawing.Color.Black; this.lblMaDV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaDV.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtMaDV.Size = new System.Drawing.Size(220, 25); this.txtMaDV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMaDV.Location = new System.Drawing.Point(20, 40); this.lblMaDV.Text = "Mã DV:"; this.lblMaDV.AutoSize = true; this.lblMaDV.ForeColor = System.Drawing.Color.Black; this.lblMaDV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMaDV.Location = new System.Drawing.Point(130, 37); this.txtMaDV.Size = new System.Drawing.Size(220, 25); this.txtMaDV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // TenDV
-            this.lblTenDV.Location = new System.Drawing.Point(lblX, startY); this.lblTenDV.Text = "Tên DV:"; this.lblTenDV.AutoSize = true; this.lblTenDV.ForeColor = System.Drawing.Color.Black; this.lblTenDV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTenDV.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtTenDV.Size = new System.Drawing.Size(220, 25); this.txtTenDV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtTenDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // TenDV
+            this.lblTenDV.Location = new System.Drawing.Point(20, 90); this.lblTenDV.Text = "Tên DV:"; this.lblTenDV.AutoSize = true; this.lblTenDV.ForeColor = System.Drawing.Color.Black; this.lblTenDV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTenDV.Location = new System.Drawing.Point(130, 87); this.txtTenDV.Size = new System.Drawing.Size(220, 25); this.txtTenDV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtTenDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // DonVi
-            this.lblDonVi.Location = new System.Drawing.Point(lblX, startY); this.lblDonVi.Text = "Đơn vị:"; this.lblDonVi.AutoSize = true; this.lblDonVi.ForeColor = System.Drawing.Color.Black; this.lblDonVi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDonVi.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtDonVi.Size = new System.Drawing.Size(220, 25); this.txtDonVi.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDonVi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // DonVi
+            this.lblDonVi.Location = new System.Drawing.Point(20, 140); this.lblDonVi.Text = "Đơn vị:"; this.lblDonVi.AutoSize = true; this.lblDonVi.ForeColor = System.Drawing.Color.Black; this.lblDonVi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDonVi.Location = new System.Drawing.Point(130, 137); this.txtDonVi.Size = new System.Drawing.Size(220, 25); this.txtDonVi.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDonVi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // GiaDV
-            this.lblGiaDV.Location = new System.Drawing.Point(lblX, startY); this.lblGiaDV.Text = "Đơn giá:"; this.lblGiaDV.AutoSize = true; this.lblGiaDV.ForeColor = System.Drawing.Color.Black; this.lblGiaDV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtGiaDV.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtGiaDV.Size = new System.Drawing.Size(220, 25); this.txtGiaDV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtGiaDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; this.txtGiaDV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // GiaDV
+            this.lblGiaDV.Location = new System.Drawing.Point(20, 190); this.lblGiaDV.Text = "Đơn giá:"; this.lblGiaDV.AutoSize = true; this.lblGiaDV.ForeColor = System.Drawing.Color.Black; this.lblGiaDV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaDV.Location = new System.Drawing.Point(130, 187); this.txtGiaDV.Size = new System.Drawing.Size(220, 25); this.txtGiaDV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtGiaDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; this.txtGiaDV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 
             // 
             // grpDanhSach

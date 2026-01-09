@@ -149,23 +149,21 @@ namespace Lab.GUI
             this.grpThongTin.TabIndex = 0;
             this.grpThongTin.Text = " Thông tin hóa đơn ";
 
-            int lblX = 20, ctrlX = 130, startY = 40, step = 50;
-
             // MaHD
-            this.lblMaHD.Location = new System.Drawing.Point(lblX, startY); this.lblMaHD.Text = "Mã HĐ:"; this.lblMaHD.AutoSize = true; this.lblMaHD.ForeColor = System.Drawing.Color.Black; this.lblMaHD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaHD.Location = new System.Drawing.Point(ctrlX, startY - 3); this.txtMaHD.Size = new System.Drawing.Size(220, 25); this.txtMaHD.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaHD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMaHD.Location = new System.Drawing.Point(20, 40); this.lblMaHD.Text = "Mã HĐ:"; this.lblMaHD.AutoSize = true; this.lblMaHD.ForeColor = System.Drawing.Color.Black; this.lblMaHD.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMaHD.Location = new System.Drawing.Point(130, 37); this.txtMaHD.Size = new System.Drawing.Size(220, 25); this.txtMaHD.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaHD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            startY += step; // NgayHD
-            this.lblNgayHD.Location = new System.Drawing.Point(lblX, startY); this.lblNgayHD.Text = "Ngày lập:"; this.lblNgayHD.AutoSize = true; this.lblNgayHD.ForeColor = System.Drawing.Color.Black; this.lblNgayHD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgayHD.Location = new System.Drawing.Point(ctrlX, startY - 3); this.dtpNgayHD.Size = new System.Drawing.Size(220, 25); this.dtpNgayHD.Font = new System.Drawing.Font("Segoe UI", 10F); this.dtpNgayHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom; this.dtpNgayHD.CustomFormat = "dd/MM/yyyy";
+            // NgayHD
+            this.lblNgayHD.Location = new System.Drawing.Point(20, 90); this.lblNgayHD.Text = "Ngày lập:"; this.lblNgayHD.AutoSize = true; this.lblNgayHD.ForeColor = System.Drawing.Color.Black; this.lblNgayHD.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayHD.Location = new System.Drawing.Point(130, 87); this.dtpNgayHD.Size = new System.Drawing.Size(220, 25); this.dtpNgayHD.Font = new System.Drawing.Font("Segoe UI", 10F); this.dtpNgayHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom; this.dtpNgayHD.CustomFormat = "dd/MM/yyyy";
 
-            startY += step; // NhanVien
-            this.lblNhanVien.Location = new System.Drawing.Point(lblX, startY); this.lblNhanVien.Text = "Nhân viên:"; this.lblNhanVien.AutoSize = true; this.lblNhanVien.ForeColor = System.Drawing.Color.Black; this.lblNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbNhanVien.Location = new System.Drawing.Point(ctrlX, startY - 3); this.cmbNhanVien.Size = new System.Drawing.Size(220, 25); this.cmbNhanVien.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            // NhanVien
+            this.lblNhanVien.Location = new System.Drawing.Point(20, 140); this.lblNhanVien.Text = "Nhân viên:"; this.lblNhanVien.AutoSize = true; this.lblNhanVien.ForeColor = System.Drawing.Color.Black; this.lblNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbNhanVien.Location = new System.Drawing.Point(130, 137); this.cmbNhanVien.Size = new System.Drawing.Size(220, 25); this.cmbNhanVien.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
-            startY += step; // Phong
-            this.lblPhong.Location = new System.Drawing.Point(lblX, startY); this.lblPhong.Text = "Phòng:"; this.lblPhong.AutoSize = true; this.lblPhong.ForeColor = System.Drawing.Color.Black; this.lblPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbPhong.Location = new System.Drawing.Point(ctrlX, startY - 3); this.cmbPhong.Size = new System.Drawing.Size(220, 25); this.cmbPhong.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            // Phong
+            this.lblPhong.Location = new System.Drawing.Point(20, 190); this.lblPhong.Text = "Phòng:"; this.lblPhong.AutoSize = true; this.lblPhong.ForeColor = System.Drawing.Color.Black; this.lblPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbPhong.Location = new System.Drawing.Point(130, 187); this.cmbPhong.Size = new System.Drawing.Size(220, 25); this.cmbPhong.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
             // 
             // grpDanhSach

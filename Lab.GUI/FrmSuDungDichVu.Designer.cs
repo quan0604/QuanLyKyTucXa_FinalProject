@@ -144,20 +144,18 @@ namespace Lab.GUI
             this.grpThongTin.TabIndex = 0;
             this.grpThongTin.Text = " Thông tin chi tiết ";
 
-            int lblX = 20, ctrlX = 130, startY = 40, step = 60;
-
             // Hoa Don
-            this.lblHoaDon.Location = new System.Drawing.Point(lblX, startY); this.lblHoaDon.Text = "Hóa Đơn:"; this.lblHoaDon.AutoSize = true; this.lblHoaDon.ForeColor = System.Drawing.Color.Black; this.lblHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbHoaDon.Location = new System.Drawing.Point(ctrlX, startY - 3); this.cmbHoaDon.Size = new System.Drawing.Size(220, 25); this.cmbHoaDon.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbHoaDon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lblHoaDon.Location = new System.Drawing.Point(20, 40); this.lblHoaDon.Text = "Hóa Đơn:"; this.lblHoaDon.AutoSize = true; this.lblHoaDon.ForeColor = System.Drawing.Color.Black; this.lblHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbHoaDon.Location = new System.Drawing.Point(130, 37); this.cmbHoaDon.Size = new System.Drawing.Size(220, 25); this.cmbHoaDon.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbHoaDon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHoaDon.SelectedIndexChanged += new System.EventHandler(this.cmbHoaDon_SelectedIndexChanged); // Helper event
 
-            startY += step; // Dich Vu
-            this.lblDichVu.Location = new System.Drawing.Point(lblX, startY); this.lblDichVu.Text = "Dịch Vụ:"; this.lblDichVu.AutoSize = true; this.lblDichVu.ForeColor = System.Drawing.Color.Black; this.lblDichVu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbDichVu.Location = new System.Drawing.Point(ctrlX, startY - 3); this.cmbDichVu.Size = new System.Drawing.Size(220, 25); this.cmbDichVu.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbDichVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            // Dich Vu
+            this.lblDichVu.Location = new System.Drawing.Point(20, 100); this.lblDichVu.Text = "Dịch Vụ:"; this.lblDichVu.AutoSize = true; this.lblDichVu.ForeColor = System.Drawing.Color.Black; this.lblDichVu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbDichVu.Location = new System.Drawing.Point(130, 97); this.cmbDichVu.Size = new System.Drawing.Size(220, 25); this.cmbDichVu.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbDichVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
-            startY += step; // So Luong
-            this.lblSoLuong.Location = new System.Drawing.Point(lblX, startY); this.lblSoLuong.Text = "Số Lượng:"; this.lblSoLuong.AutoSize = true; this.lblSoLuong.ForeColor = System.Drawing.Color.Black; this.lblSoLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numSoLuong.Location = new System.Drawing.Point(ctrlX, startY - 3); this.numSoLuong.Size = new System.Drawing.Size(100, 25); this.numSoLuong.Font = new System.Drawing.Font("Segoe UI", 10F); this.numSoLuong.Minimum = 0; this.numSoLuong.Maximum = 10000; this.numSoLuong.Value = 1;
+            // So Luong
+            this.lblSoLuong.Location = new System.Drawing.Point(20, 160); this.lblSoLuong.Text = "Số Lượng:"; this.lblSoLuong.AutoSize = true; this.lblSoLuong.ForeColor = System.Drawing.Color.Black; this.lblSoLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numSoLuong.Location = new System.Drawing.Point(130, 157); this.numSoLuong.Size = new System.Drawing.Size(100, 25); this.numSoLuong.Font = new System.Drawing.Font("Segoe UI", 10F); this.numSoLuong.Minimum = 0; this.numSoLuong.Maximum = 10000; this.numSoLuong.Value = 1;
 
             // 
             // grpDanhSach

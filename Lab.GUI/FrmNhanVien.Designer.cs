@@ -170,36 +170,38 @@ namespace Lab.GUI
             this.grpThongTin.Padding = new System.Windows.Forms.Padding(5);
 
             // Inputs Layout 4x2
-            int row1 = 40;
-            int row2 = 100;
-            int col1 = 30, col2 = 280, col3 = 540, col4 = 800;
-            int lblW = 80, txtW = 160;
+            // Inputs Layout 4x2 - Replaced with static values
+            int txtW = 160; // Keep local width var if needed or inline it. Better inline for 100% safety? 
+            // In InitializeComponent, local vars are okay if they are const-like, but `int txtW=160` is technically dynamic code.
+            // Designer might tolerate `int const` but simpler to just hardcode width too.
+            // Actually, `Size` property takes a `Size` object which is fine.
+            // I will hardcode the width to be safe.
 
             // Row 1
-            this.lblMaNV.Location = new System.Drawing.Point(col1, row1); this.lblMaNV.Text = "Mã NV:"; this.lblMaNV.AutoSize = true; this.lblMaNV.ForeColor = System.Drawing.Color.Black; this.lblMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaNV.Location = new System.Drawing.Point(col1 + 70, row1-3); this.txtMaNV.Size = new System.Drawing.Size(txtW, 25); this.txtMaNV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMaNV.Location = new System.Drawing.Point(30, 40); this.lblMaNV.Text = "Mã NV:"; this.lblMaNV.AutoSize = true; this.lblMaNV.ForeColor = System.Drawing.Color.Black; this.lblMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMaNV.Location = new System.Drawing.Point(100, 37); this.txtMaNV.Size = new System.Drawing.Size(160, 25); this.txtMaNV.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtMaNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            this.lblHoTen.Location = new System.Drawing.Point(col2, row1); this.lblHoTen.Text = "Họ tên:"; this.lblHoTen.AutoSize = true; this.lblHoTen.ForeColor = System.Drawing.Color.Black; this.lblHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtHoTen.Location = new System.Drawing.Point(col2 + 70, row1-3); this.txtHoTen.Size = new System.Drawing.Size(txtW, 25); this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblHoTen.Location = new System.Drawing.Point(280, 40); this.lblHoTen.Text = "Họ tên:"; this.lblHoTen.AutoSize = true; this.lblHoTen.ForeColor = System.Drawing.Color.Black; this.lblHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHoTen.Location = new System.Drawing.Point(350, 37); this.txtHoTen.Size = new System.Drawing.Size(160, 25); this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            this.lblCMND.Location = new System.Drawing.Point(col3, row1); this.lblCMND.Text = "CMND:"; this.lblCMND.AutoSize = true; this.lblCMND.ForeColor = System.Drawing.Color.Black; this.lblCMND.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCMND.Location = new System.Drawing.Point(col3 + 70, row1-3); this.txtCMND.Size = new System.Drawing.Size(txtW, 25); this.txtCMND.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtCMND.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCMND.Location = new System.Drawing.Point(540, 40); this.lblCMND.Text = "CMND:"; this.lblCMND.AutoSize = true; this.lblCMND.ForeColor = System.Drawing.Color.Black; this.lblCMND.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCMND.Location = new System.Drawing.Point(610, 37); this.txtCMND.Size = new System.Drawing.Size(160, 25); this.txtCMND.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtCMND.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            this.lblSDT.Location = new System.Drawing.Point(col4, row1); this.lblSDT.Text = "SĐT:"; this.lblSDT.AutoSize = true; this.lblSDT.ForeColor = System.Drawing.Color.Black; this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSDT.Location = new System.Drawing.Point(col4 + 70, row1-3); this.txtSDT.Size = new System.Drawing.Size(txtW, 25); this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSDT.Location = new System.Drawing.Point(800, 40); this.lblSDT.Text = "SĐT:"; this.lblSDT.AutoSize = true; this.lblSDT.ForeColor = System.Drawing.Color.Black; this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSDT.Location = new System.Drawing.Point(870, 37); this.txtSDT.Size = new System.Drawing.Size(160, 25); this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
             // Row 2
-            this.lblEmail.Location = new System.Drawing.Point(col1, row2); this.lblEmail.Text = "Email:"; this.lblEmail.AutoSize = true; this.lblEmail.ForeColor = System.Drawing.Color.Black; this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmail.Location = new System.Drawing.Point(col1 + 70, row2-3); this.txtEmail.Size = new System.Drawing.Size(txtW, 25); this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEmail.Location = new System.Drawing.Point(30, 100); this.lblEmail.Text = "Email:"; this.lblEmail.AutoSize = true; this.lblEmail.ForeColor = System.Drawing.Color.Black; this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.Location = new System.Drawing.Point(100, 97); this.txtEmail.Size = new System.Drawing.Size(160, 25); this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            this.lblDiaChi.Location = new System.Drawing.Point(col2, row2); this.lblDiaChi.Text = "Địa chỉ:"; this.lblDiaChi.AutoSize = true; this.lblDiaChi.ForeColor = System.Drawing.Color.Black; this.lblDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDiaChi.Location = new System.Drawing.Point(col2 + 70, row2-3); this.txtDiaChi.Size = new System.Drawing.Size(txtW, 25); this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDiaChi.Location = new System.Drawing.Point(280, 100); this.lblDiaChi.Text = "Địa chỉ:"; this.lblDiaChi.AutoSize = true; this.lblDiaChi.ForeColor = System.Drawing.Color.Black; this.lblDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDiaChi.Location = new System.Drawing.Point(350, 97); this.txtDiaChi.Size = new System.Drawing.Size(160, 25); this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            this.lblLuong.Location = new System.Drawing.Point(col3, row2); this.lblLuong.Text = "Lương:"; this.lblLuong.AutoSize = true; this.lblLuong.ForeColor = System.Drawing.Color.Black; this.lblLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLuong.Location = new System.Drawing.Point(col3 + 70, row2-3); this.txtLuong.Size = new System.Drawing.Size(txtW, 25); this.txtLuong.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblLuong.Location = new System.Drawing.Point(540, 100); this.lblLuong.Text = "Lương:"; this.lblLuong.AutoSize = true; this.lblLuong.ForeColor = System.Drawing.Color.Black; this.lblLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLuong.Location = new System.Drawing.Point(610, 97); this.txtLuong.Size = new System.Drawing.Size(160, 25); this.txtLuong.Font = new System.Drawing.Font("Segoe UI", 10F); this.txtLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-            this.lblNguoiQuanLy.Location = new System.Drawing.Point(col4, row2); this.lblNguoiQuanLy.Text = "Quản lý:"; this.lblNguoiQuanLy.AutoSize = true; this.lblNguoiQuanLy.ForeColor = System.Drawing.Color.Black; this.lblNguoiQuanLy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbNguoiQuanLy.Location = new System.Drawing.Point(col4 + 70, row2-3); this.cmbNguoiQuanLy.Size = new System.Drawing.Size(txtW, 25); this.cmbNguoiQuanLy.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbNguoiQuanLy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbNguoiQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.cmbNguoiQuanLy.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNguoiQuanLy.Location = new System.Drawing.Point(800, 100); this.lblNguoiQuanLy.Text = "Quản lý:"; this.lblNguoiQuanLy.AutoSize = true; this.lblNguoiQuanLy.ForeColor = System.Drawing.Color.Black; this.lblNguoiQuanLy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbNguoiQuanLy.Location = new System.Drawing.Point(870, 97); this.cmbNguoiQuanLy.Size = new System.Drawing.Size(160, 25); this.cmbNguoiQuanLy.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbNguoiQuanLy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbNguoiQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.cmbNguoiQuanLy.BackColor = System.Drawing.Color.WhiteSmoke;
 
             // 
             // grpDanhSach (Bottom fill)

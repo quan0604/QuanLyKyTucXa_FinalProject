@@ -162,19 +162,17 @@ namespace Lab.GUI
             this.grpThongTin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
             this.grpThongTin.Text = " Thông tin chọn ";
             
-            int lblX = 20, ctrlX = 100, startY = 40, step = 50;
-            
             // Controls (Left Panel)
-            this.lblNgay.Location = new System.Drawing.Point(lblX, startY); this.lblNgay.Text = "Ngày:"; this.lblNgay.AutoSize = true; this.lblNgay.ForeColor = System.Drawing.Color.Black; this.lblNgay.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgay.Location = new System.Drawing.Point(ctrlX, startY - 3); this.dtpNgay.Size = new System.Drawing.Size(200, 25); this.dtpNgay.Font = new System.Drawing.Font("Segoe UI", 10F); this.dtpNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.lblNgay.Location = new System.Drawing.Point(20, 40); this.lblNgay.Text = "Ngày:"; this.lblNgay.AutoSize = true; this.lblNgay.ForeColor = System.Drawing.Color.Black; this.lblNgay.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgay.Location = new System.Drawing.Point(100, 37); this.dtpNgay.Size = new System.Drawing.Size(200, 25); this.dtpNgay.Font = new System.Drawing.Font("Segoe UI", 10F); this.dtpNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 
-            startY += step;
-            this.lblPhong.Location = new System.Drawing.Point(lblX, startY); this.lblPhong.Text = "Phòng:"; this.lblPhong.AutoSize = true; this.lblPhong.ForeColor = System.Drawing.Color.Black; this.lblPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbPhong.Location = new System.Drawing.Point(ctrlX, startY - 3); this.cmbPhong.Size = new System.Drawing.Size(200, 25); this.cmbPhong.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            // startY += step;
+            this.lblPhong.Location = new System.Drawing.Point(20, 90); this.lblPhong.Text = "Phòng:"; this.lblPhong.AutoSize = true; this.lblPhong.ForeColor = System.Drawing.Color.Black; this.lblPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbPhong.Location = new System.Drawing.Point(100, 87); this.cmbPhong.Size = new System.Drawing.Size(200, 25); this.cmbPhong.Font = new System.Drawing.Font("Segoe UI", 10F); this.cmbPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
-            startY += step + 10;
+            // startY += step + 10;
             this.btnXem.Text = "Xem Danh Sách";
-            this.btnXem.Location = new System.Drawing.Point(ctrlX, startY);
+            this.btnXem.Location = new System.Drawing.Point(100, 150);
             this.btnXem.Size = new System.Drawing.Size(200, 40);
             this.btnXem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(132)))), ((int)(((byte)(199)))));
             this.btnXem.ForeColor = System.Drawing.Color.White;
